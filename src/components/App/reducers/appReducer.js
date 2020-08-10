@@ -1,5 +1,6 @@
 export const initialState = {
-  users: []
+  // users: []
+  facts: []
 };
 
 export default function reducer(state, action) {
