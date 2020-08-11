@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FactForm component renders FactForm 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <FactForm>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Enter image url"
+        type="text"
+        value=""
+      />
+      <input
+        onChange={[Function]}
+        placeholder="Add animal fact here"
+        type="text"
+        value=""
+      />
+      <button>
+        Add Fact
+      </button>
+    </form>
+  </FactForm>
+</Provider>
+`;
