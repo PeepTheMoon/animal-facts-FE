@@ -1,6 +1,7 @@
 export const initialState = {
   // users: []
-  facts: []
+  facts: [],
+  loading: false
 };
 
 export default function reducer(state, action) {
