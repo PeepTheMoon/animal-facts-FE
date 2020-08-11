@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fact component renders Fact 1`] = `
+<figure>
+  <img />
+  <figcaption />
+</figure>
+`;

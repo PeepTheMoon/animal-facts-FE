@@ -1,4 +1,11 @@
-const { setFacts, SET_FACTS, setFactsLoading, SET_FACTS_LOADING } = require('./factsActions');
+const { 
+  setFacts, 
+  SET_FACTS, 
+  setFactsLoading, 
+  SET_FACTS_LOADING,
+  addFact, 
+  ADD_FACT
+} = require('./factsActions');
 
 describe('facts actions', () => {
   it('creates a SET_FACTS action', () => {
@@ -33,6 +40,21 @@ describe('facts actions', () => {
 
     expect(action).toEqual({
       type: SET_FACTS_LOADING
+    });
+  });
+
+  it('creates an ADD_FACT action', () => {
+    const action = addFact({
+      image: 'animalImage3.png',
+      caption: 'interesting fact 3'
+    });
+
+    expect(action).toEqual({
+      type: ADD_FACT,
+      payload: {
+        image: 'animalImage3.png',
+        caption: 'interesting fact 3'
+      }
     });
   });
 });
