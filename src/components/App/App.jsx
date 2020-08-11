@@ -5,13 +5,14 @@ import {
   Route
 } from 'react-router-dom';
 import FactForm from '../../components/form/FactForm';
+import FactsPage from '../../components/facts/FactsPage';
 
 export default function App() {
   return (
     <Router>
       <FactForm />
       <Switch>
-        <Route />
+        <Route exact path="/" component={FactsPage} />
       </Switch>
     </Router>
   );

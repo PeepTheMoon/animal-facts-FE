@@ -4,7 +4,11 @@ exports[`App component renders App 1`] = `
 <BrowserRouter>
   <FactForm />
   <Switch>
-    <Route />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
   </Switch>
 </BrowserRouter>
 `;

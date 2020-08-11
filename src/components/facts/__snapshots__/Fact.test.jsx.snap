@@ -2,7 +2,11 @@
 
 exports[`Fact component renders Fact 1`] = `
 <figure>
-  <img />
-  <figcaption />
+  <img
+    src="image.png"
+  />
+  <figcaption>
+    wild animals
+  </figcaption>
 </figure>
 `;
