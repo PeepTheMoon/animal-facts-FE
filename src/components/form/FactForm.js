@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addFact } from '../../actions/factsActions';
+import { createFact } from '../../../services/fetchFacts';
 
 const FactForm = () => {
   const [image, setImage] = useState('');
@@ -17,6 +18,7 @@ const FactForm = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
+    createFact({ image, caption });
     dispatch(addFact({
       image: image,
       caption: caption

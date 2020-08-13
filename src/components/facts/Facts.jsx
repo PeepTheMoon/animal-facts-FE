@@ -6,8 +6,8 @@ import Fact from './Fact';
 const Facts = () => {
   const facts = useSelector(getFacts);
 
-  const factElements = facts.map(fact => (
-    <li key={fact.id}>
+  const factElements = facts.map((fact, i) => (
+    <li key={i}>
       <Fact {...fact} />
     </li>
   ));
