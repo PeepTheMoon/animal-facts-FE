@@ -2,8 +2,13 @@
 
 exports[`App component renders App 1`] = `
 <BrowserRouter>
+  <Header />
   <FactForm />
   <Switch>
+    <Route
+      component={[Function]}
+      path="/signup"
+    />
     <Route
       component={[Function]}
       exact={true}

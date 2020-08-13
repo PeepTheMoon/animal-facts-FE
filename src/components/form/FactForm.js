@@ -23,6 +23,8 @@ const FactForm = () => {
       image: image,
       caption: caption
     }));
+    setImage(''); 
+    setCaption('');
   };
 
   return (
