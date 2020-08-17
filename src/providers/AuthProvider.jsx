@@ -14,8 +14,8 @@ const AuthProvider = ({ children }) => {
       .catch(err => setAuthError(err));
   };
 
-  const signup = (email, password, profileImage) =>
-    authService(fetchSignup, email, password, profileImage);
+  const signup = (username, password, profileImage) =>
+    authService(fetchSignup, username, password, profileImage);
 
   return (
     <AuthContext.Provider value={{ currentUser, authError, signup }}>
